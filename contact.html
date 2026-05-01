@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Registration - Boston High School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-pic">
+                <img src="cropped-school-badge.png" alt="Boston High School Logo">
+            </div>
+            <h1 class="logo">Boston High School</h1>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link ">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active ">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact & Registration</h1>
+        <p>Get in Touch with Boston High School</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <h3>📍 Location</h3>
+                        <p>Mpala, Uganda</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+256 709584623</p>
+                        <p>+256 765432109</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@bostonhighschool.edu</p>
+                        <p>admissions@bostonhighschool.edu</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🕐 Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    
+                    <div class="map-container">
+                        <h3>Location Map</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31918.505269634115!2d32.487236703977!3d0.09216264404340327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smap%20for%20the%20location%20of%20boston%20high%20school%20entebbe!5e0!3m2!1sen!2sug!4v1777062778868!5m2!1sen!2sug" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <h2>Register Your Interest</h2>
+                    <form id="registrationForm" class="registration-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parentGuardian">Parent/Guardian Name</label>
+                            <input type="text" id="parentGuardian" name="parentGuardian">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Interested Program *</label>
+                            <select id="program" name="program" required>
+                                <option value="">Select Program</option>
+                                <option value="olevel">O-Level (Forms 1-4)</option>
+                                <option value="alevel">A-Level (Upper/Lower Six)</option>
+                            </select>
+                            <span class="error-message" id="programError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message or Questions</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest in Boston High School..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree">I agree to the terms and conditions and would like to receive updates from Boston High School</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit Registration</button>
+                        <div id="successMessage" class="success-message" style="display:none;">
+                            Thank you for registering! We will contact you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Boston High School</h4>
+                <p>A leading institution committed to providing quality education and developing well-rounded students.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@bostonhighschool.edu</p>
+                <p>Phone: +256 709584623</p>
+                <p>Location: Mpala, Uganda</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Boston High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

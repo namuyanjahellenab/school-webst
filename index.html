@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston High School - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-pic">
+                <img src="cropped-school-badge.png" alt="Boston High School Logo">
+            </div>
+            <h1 class="logo">Boston High School</h1>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link ">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+   <header class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/logo.png" alt="Boston High School">
+                </div>
+            <div class="slide fade">
+                <img src="images/school campus.jpg" alt="Campus">
+                </div>
+            <div class="slide fade">
+                <img src="images/students in class.jpg" alt="Students">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="hero-content">
+            <h2>Welcome to Boston High School</h2>
+            <p>Education is a Priority</p>
+            <a href="contact.html" class="cta-button">Apply Now</a>
+        </div>
+    </header>
+
+    <section class="highlights">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <h3>Academic Excellence</h3>
+                    <p>Comprehensive O-Level and A-Level programs with experienced teachers.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Sports Facilities</h3>
+                    <p>State-of-the-art stadium for football, rugby, and other sports.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Boarding</h3>
+                    <p>Safe and comfortable boarding with 24/7 supervision.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Global Standards</h3>
+                    <p>International curriculum with partnerships worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>O-Level Program</h3>
+                    <p>A 4-year program building strong foundations across sciences and humanities.</p>
+                    <h3>A-Level Program</h3>
+                    <p>A 2-year program with Science and Arts streams for university preparation.</p>
+                    <a href="academics.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Boston</h4>
+                <p>A leading institution committed to quality education.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@bostonhighschool.edu</p>
+                <p>Phone: +256 709584623</p>
+                <p>Mpala, Uganda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Boston High School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
